@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Galerie d'Art</title>
+
+  <!-- Lien vers Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- Lien vers la feuille de style CSS externe -->
+  <link rel="stylesheet" href="C:\Users\admin\OneDrive\Documents\stylegallery\stylegallery.css">
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <h1>Galerie d'Art</h1>
+    <p>Découvrez et partagez les œuvres de notre artiste</p>
+       <!-- Bouton pour ajouter une œuvre -->
+       <div class="upload-section">
+        <button onclick="openForm()">Ajouter une œuvre</button>
+      </div>
+  </header>
+
+  <!-- Galerie d'art -->
+  <section class="gallery">
+    <div class="artwork">
+      <a href="C:\Users\admin\OneDrive\Documents\ARTGALLERY\oeuvre1.html">
+        <img class="painting1" src="C:\Users\admin\OneDrive\Documents\photos\birmingham-museums-trust-e0wBK0xJXYQ-unsplash.jpg" alt="Peinture 1">
+      </a>
+      <h2> L'âme recueillie sous les voûtes gothiques</h2>
+        <p> Fidèles en prière sous les arches d'une cathédrale gothique, baignée de lumière sacrée.</p>
+    </div>
+    <div class="artwork">
+      <a href="C:\Users\admin\OneDrive\Documents\ARTGALLERY\oeuvre2.html">
+        <img class="painting2" src="C:\Users\admin\OneDrive\Documents\photos\adrianna-geo-1rBg5YSi00c-unsplash.jpg" alt="Peinture 2">
+      </a>
+      <h2>L'Ascension vers les Cieux</h2>
+      <p>Anges et divinités montant vers les cieux.</p>
+    </div>
+    <div class="artwork">
+      <a href="C:\Users\admin\OneDrive\Documents\ARTGALLERY\oeuvre3.html">
+        <img src="C:\Users\admin\OneDrive\Documents\photos\andres-herrera-iOYbUXPNTCI-unsplash.jpg" alt="Peinture 3">
+      </a>
+      <h2>Portrait d'un Empereur Romain</h2>
+      <p>Buste en marbre symbolisant autorité et beauté classique.</p>
+    </div>
+    <div class="artwork">
+      <a href="C:\Users\admin\OneDrive\Documents\ARTGALLERY\oeuvre4.html">
+        <img src="C:\Users\admin\OneDrive\Documents\photos\birmingham-museums-trust-JZdPBgU6Nik-unsplash.jpg" alt="Peinture 4">
+      </a>
+      <h2>Le Rêve des Anges</h2>
+      <p>Un ange veille sur un enfant dans un ciel étoilé.</p>
+    </div>
+    <div class="artwork">
+      <a href="C:\Users\admin\OneDrive\Documents\ARTGALLERY\oeuvre5.html">
+        <img src="C:\Users\admin\OneDrive\Documents\photos\birmingham-museums-trust-sJr8LDyEf7k-unsplash.jpg" alt="Peinture 5">
+      </a>
+      <h2>Forteresse médiévale</h2>
+      <p>Aquarelle d'un château médiéval majestueux sur une falaise.</p>
+    </div>
+    <div class="artwork">
+      <a href="C:\Users\admin\OneDrive\Documents\ARTGALLERY\oeuvre6.html">
+        <img src="C:\Users\admin\OneDrive\Documents\photos\chris-czermak-PamFFHL6fVY-unsplash.jpg" alt="Peinture 6">
+      </a>
+      <h2>Fontaine de Trévi </h2>
+      <p>Sculpture baroque de Neptune entouré de créatures marines à Rome.</p>
+    </div>
+  </section>
+
+  <!-- Formulaire de soumission d'œuvre -->
+  <div id="form-popup" class="form-popup">
+    <div class="form-container">
+      <h2>Ajouter une nouvelle œuvre</h2>
+      
+      <label for="artist-name">Nom de l'artiste</label>
+      <input type="text" id="artist-name" name="artist-name" required>
+
+      <label for="title">Titre de l'œuvre</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <label for="image">URL de l'image</label>
+      <input type="text" id="image" name="image" required>
+
+      <button type="submit">Soumettre</button>
+      <button type="button" class="btn-cancel" onclick="closeForm()">Annuler</button>
+    </div>
+  </div>
+
+  <!-- Footer avec liens de contact -->
+  <footer>
+    <p>&copy; 2024 Galerie d'Art - Tous droits réservés</p>
+    <p>Contactez-nous : <a href="mailto:artiste@gallery.com">artiste@gallery.com</a> | 
+    <a href="tel:+123456789">+12 345 678 9</a></p>
+  </footer>
+
+  <script>
+    function openForm() {
+      document.getElementById("form-popup").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("form-popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
+
